@@ -6,10 +6,10 @@ terraform {
     }
   }
    backend "s3" {
-    bucket = "daws76s-divya-dev"
+    bucket = "gokul-state-dev"
     key    = "roboshop-vpc-dev"
     region = "us-east-1"
-    dynamodb_table = "locktable-dev"
+    dynamodb_table = "gokul-locking-dev"
   }
 }
 
