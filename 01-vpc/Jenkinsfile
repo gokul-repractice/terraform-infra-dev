@@ -7,7 +7,7 @@ pipeline{
     options {
         timeout(time: 1, unit: 'HOURS') 
          disableConcurrentBuilds()
-         ansiColor('xterm')   // to get colours in the output
+         ansiColor('xterm')   // to get colours in the output. Have to install ansicolor plugin along with this
     }
     parameters {
         choice(name: 'Action', choices: ['apply', 'destroy'], description: 'Pick something')
